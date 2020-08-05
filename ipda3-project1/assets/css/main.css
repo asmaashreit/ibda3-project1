@@ -1,0 +1,243 @@
+:root{
+    --main-color: rgb(58,173,230);
+    --secondry-color: rgb(114,120,128);
+}
+
+body{
+font-family: 'Cairo', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+h2{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+
+h2:after{
+    content: "";
+    position: absolute;
+    top: 82%;
+    right: 50%;
+    transform: translate(50%,-100%);
+    height: 2px;
+    width: 50px;
+    background-color: var(--main-color);
+}
+
+.our-btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(35 ,49 ,66);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, .1);
+}
+
+.our-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-fluid {
+    height: 100% !important
+}
+
+.full-sec{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+/*********start navbar******************/
+.navbar-brand{
+    height: 70px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler span {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58,173,230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-collapse {
+    text-align: left;
+}
+/**************************start hero*****************/
+.hero {
+    height: calc(100% - 86px) !important;
+    padding-top: 2rem;
+}
+
+.hero .row {
+    height: 100% !important;
+}
+
+.brand-left{
+    height: 75vh;
+    background: url(../images/header-side.jpg) no-repeat;
+    
+}
+
+.brand-left h1{
+    height: 50%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+/****************start about us****************/
+.about-us .row{
+    height: 100%;
+
+}
+
+.about-us .img-about-us{
+    height: 100%;
+}
+
+.about-us .text-about-us p{
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--secondry-color);
+    line-height: 1.7;
+}
+
+/**************start services***************/
+
+/****************start our-works*************/
+.our-works{
+    background: url(../images/bg30-Ar1web.gif);
+}
+
+.our-works .our-works-info{
+    height: 350px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 15px 15px 20px 20px;
+    box-shadow: 0rem 0.5rem 0.8rem 0.5rem rgba(0, 0, 0, .2);
+}
+
+.our-works .row .img-works{
+    height: 80%;
+    padding: 1px;
+}
+
+.our-works .row img{
+    width: 100%;
+    border-radius: 13px 13px 20px 20px;
+}
+
+.our-works .row h3{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-works a{
+    width: 300px;
+    margin: 35px 0 50px 0;
+}
+
+/****************start som-info *********************/
+.som-info{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contain-som-info{
+    width: 100%;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, .2);
+}
+
+.contain-som-info .img-som-info{
+    height: 70%;
+}
+
+.contain-som-info img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.text-som-info p{
+    margin: auto;
+    font-size: 1.3rem;
+    width: 23rem;
+}
+
+.button-som-info{
+    margin-top: 0.5rem;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.button-som-info a{
+    width: 5rem;
+    float: right;
+    box-shadow: none;
+}
+
+.button-som-info span{
+    float: left;
+}
+
+/***************start our-customers*******************/
+.our-customers{
+    background: url(../images/our-client-bg.jpg);
+}
+
+
+
+/****************start footer*****************/
+footer{
+    width: 100%;
+    background: url(../images/footer.jpg);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+footer .container {
+    max-width: 1460px;
+}
+
+.icons-footer{
+    height: 250px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.icons-footer img{
+    height: 5rem;
+}
+
+.icons-footer h5{
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.icons-footer a{
+    color: #fff;
+    font-size: 1.5rem;
+    width:2.5rem;
+    text-align: center;
+}
+
+.icons-footer a:hover{
+    text-decoration: none;
+}
