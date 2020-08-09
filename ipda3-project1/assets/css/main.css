@@ -1,6 +1,6 @@
 :root{
     --main-color: rgb(58,173,230);
-    --secondry-color: rgb(114,120,128);
+    --secondry-color: rgb(35,49,66);
 }
 
 body{
@@ -14,21 +14,30 @@ img{
 
 h2{
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    background-color: #fff;
+    padding: 80px 0;
+    margin: 30px 0;
+    background: #fff;
+    color: #233143;
 }
 
 h2:after{
     content: "";
     position: absolute;
-    top: 82%;
+    top: 75%;
     right: 50%;
     transform: translate(50%,-100%);
     height: 2px;
-    width: 50px;
+    width: 70px;
     background-color: var(--main-color);
+}
+
+h3 a{color:var(--secondry-color)}
+
+h3 a:hover,
+h3 a:focus{
+    color:var(--secondry-color);
+    text-decoration: none;
+    border: none;
 }
 
 .our-btn{
@@ -51,10 +60,13 @@ h2:after{
     height: 100% !important
 }
 
+.row{
+    margin: 0;
+}
+
 .full-sec{
     width: 100%;
     text-align: center;
-    padding-bottom: 5rem;
 }
 /*********start navbar******************/
 .navbar-brand{
@@ -80,6 +92,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     padding-top: 2rem;
 }
 
+.hero .container-fluid{
+    margin: 0;
+    padding-left: 0;
+}
+
 .hero .row {
     height: 100% !important;
 }
@@ -99,31 +116,72 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 /****************start about us****************/
-.about-us .row{
-    height: 100%;
-
+.about-us h2{
+    font-size: 2.5rem;
 }
 
-.about-us .img-about-us{
-    height: 100%;
+.about-us img{
+   width: 80%;
 }
+
+.about-us .text-about-us{padding: 0 20px;}
 
 .about-us .text-about-us p{
-    font-size: 1.5rem;
-    text-align: justify;
+    font-size: 1.7rem;
+    line-height: 1.8em;
     color: var(--secondry-color);
-    line-height: 1.7;
 }
 
 /**************start services***************/
+.services{
+    background: url(../images/we-offer.png) no-repeat;
+    background-size: cover;
+    height: 760px;
+    padding-top: 100px;
+}
+
+.services-card{
+    height: 600px;
+    padding: 2% 0;
+}
+
+.services-card .owl-nav{
+    background: none;
+    border: none;
+    margin-top: 4rem;
+}
+
+.services-card .owl-item > div{
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #dbdfe1;
+    border-radius: 20px;
+    padding: 30px 20px 20px;
+}
+
+.card-serv div {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+
+.services-card h5{
+    color: var(--main-color);
+    margin: 20px 0;
+}
 
 /****************start our-works*************/
 .our-works{
     background: url(../images/bg30-Ar1web.gif);
+    padding-bottom: 80px;
+}
+.our-works .container{
+    max-width: 1325px;
 }
 
 .our-works .our-works-info{
-    height: 350px;
+    width: 90%;
+    height: 90%;
     margin: 30px auto;
     background: #fff;
     border-radius: 15px 15px 20px 20px;
@@ -131,7 +189,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .our-works .row .img-works{
-    height: 80%;
+    height: 74%;
     padding: 1px;
 }
 
@@ -142,6 +200,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
 .our-works .row h3{
     height: 20%;
+    padding: 3% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,20 +213,26 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
 /****************start som-info *********************/
 .som-info{
-    padding: 5rem 0;
+    padding: 2.5rem 0;
     text-align: center;
+}
+
+
+.som-info .row > div{
+    margin-bottom: 4rem;
+    height: 450px;
 }
 
 .contain-som-info{
     width: 100%;
-    height: 500px;
+    height: 100%;
     margin: 30px auto;
     border-radius: 20px;
     box-shadow: 0rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, .2);
 }
 
 .contain-som-info .img-som-info{
-    height: 70%;
+    height: 60%;
 }
 
 .contain-som-info img{
@@ -175,16 +240,19 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     border-radius: 20px 20px 0 0;
 }
 
+.text-som-info{
+    height: 25%;
+    padding: 3% 3% 0;
+}
+
 .text-som-info p{
-    margin: auto;
     font-size: 1.3rem;
-    width: 23rem;
 }
 
 .button-som-info{
-    margin-top: 0.5rem;
+    height: 15%;
     position: relative;
-    padding: 0 2rem;
+    padding: 0 6%;
 }
 
 .button-som-info a{
@@ -200,44 +268,116 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 /***************start our-customers*******************/
 .our-customers{
     background: url(../images/our-client-bg.jpg);
+    background-size: cover;
+    background-position: bottom; 
+    padding-bottom: 150px !important;
 }
 
+.customer-cards{
+
+}
+
+.customer-cards .owl-item > div{
+    padding: 17% 17%;
+}
+
+.owl-nav button{
+    margin: 0 1.5rem;
+}
+
+.owl-nav button:focus{
+    outline: none;
+}
+
+.owl-nav span{
+    font-size: 2.2rem;
+}
+
+.owl-nav span:focus{
+    border: none;
+    -webkit-outline: none;
+    outline: none;
+}
 
 
 /****************start footer*****************/
 footer{
     width: 100%;
     background: url(../images/footer.jpg);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+    background-position: bottom;
 }
 
-footer .container {
-    max-width: 1460px;
+.img-footer{
+    height: 380px;
+    padding-right: 8%;
 }
 
 .icons-footer{
-    height: 250px;
-    margin: auto;
-    padding: 2rem 1rem;
+    padding-top: 5%;
 }
 
 .icons-footer img{
-    height: 5rem;
+    height: 70px;
 }
 
 .icons-footer h5{
-    margin: 1rem 0;
+    margin: 2rem 0;
     color: #fff;
+}
+
+.icons-footer div{
+    width: 200px;
+    padding-right: 20px;
 }
 
 .icons-footer a{
     color: #fff;
-    font-size: 1.5rem;
-    width:2.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .icons-footer a:hover{
     text-decoration: none;
+}
+
+.list-next-page {
+    height: 3rem;
+    width: 20rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  
+/******************** step in other pages *************/
+  .list-next-bar{
+      width:240px;
+      margin: 40px auto;
+  }
+
+  .list-next-bar div{
+    height: 50px !important;
+    display:flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e4e1e1;
+    cursor: pointer;
+  }
+
+  .list-next-bar div.active {
+    color: #fff;
+    background: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  .list-next-bar .number {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+.list-next-bar div:first-child,
+.list-next-bar div:last-child {
+  font-size: .7rem;
 }
