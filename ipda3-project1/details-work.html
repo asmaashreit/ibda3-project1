@@ -12,34 +12,7 @@
     <link rel="stylesheet" href="assets/plugin/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-      h2{
-        margin: 50px 30px 30px 0;
-        border-right: 6px solid var(--main-color);
-        padding: 10px 20px 10px 0;
-        text-align: right;
-        font-size: 3rem;
-      }
-
-      h2::after{
-        content:none;
-      }
-
-      .project-img{
-        height: 560px;
-        
-      }
-
-      .project-text{
-        background: url(assets/images/details-bg.png) no-repeat;
-        background-size:cover;
-        padding: 100px 30px;
-      }
-
-      .project-text p{
-        font-size: 2rem;
-        line-height: 1.8em;
-        color: #fff
-      }
+      
       /************slider*************/
       .card-carousel {
         display: flex;
@@ -49,8 +22,6 @@
       }
 
       .card-carousel .my-card {
-        height: 20rem;
-        width: 12rem;
         position: relative;
         z-index: 1;
         -webkit-transform: scale(0.6) translateY(-2rem);
@@ -78,13 +49,6 @@
         pointer-events: auto;
         transition: 1s;
       }
-
-      @media(max-width: 800px){
-        .project-text p{
-        font-size: 1.2rem;
-        line-height: 1.8em;
-        }
-      }
     </style>
     <title>موقع ابداع تيك للبرمجيات</title>
   </head>
@@ -101,7 +65,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="our-works.html">اعمالنا</a>
@@ -118,44 +82,33 @@
     <!--------------end navbar-------------->
 
     <section class="details-project full-sec">
-      <h2>تطبيق وان</h2>
+      <h2 class="line-right py-1">تطبيق وان</h2>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-xs-10 project-img">
-            <img src="assets/images/project-preview-header.png">
-          </div>
+        <div class="project-img">
+          <img src="assets/images/project-preview-header.png">
         </div>
       </div>
-      <h2>تفاصيل المشروع</h2>
-      <div class="container-fluid project-text">
-        <div class="row justify-content-center">
-          <div class="col-sm-11">
-            <p>
-              لوريم ابيسوم هو نموذج افتراضي يوضع فى التصاميم لتعرض على العمليل ليتصور طريقة وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور أو فلاير على سبيل المثال وعند موافقة العميل المبدئية على التصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات والانتقادات للتصميم الاساسي . وخلافا للاعتقاد السائد فإن لوريم إيبسوم ليس نصاً عشوائياً . بل إن له جزور فى الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد من كتاب "حول أقاصي الخير والشر" 
-            </p>
-          </div>
+      <h2 class="line-right mb-4 py-1">تفاصيل المشروع</h2>
+      <div class="project-text text-center">
+        <p>
+          لوريم ابيسوم هو نموذج افتراضي يوضع فى التصاميم لتعرض على العمليل ليتصور طريقة وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور أو فلاير على سبيل المثال وعند موافقة العميل المبدئية على التصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات والانتقادات للتصميم الاساسي . وخلافا للاعتقاد السائد فإن لوريم إيبسوم ليس نصاً عشوائياً . بل إن له جزور فى الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد من كتاب "حول أقاصي الخير والشر" 
+        </p>
+      </div>
+      <h2 class="line-right py-1">خدلك لفه</h2>
+      <div class="card-carousel mb-5">
+        <div class="my-card">
+          <img src="assets/images/slide-one.png">
+        </div>
+        <div class="my-card">
+          <img src="assets/images/Slider-two.png">
+        </div>
+        <div class="my-card">
+          <img src="assets/images/slider-three.png">
+        </div>
+        <div class="my-card">
+          <img src="assets/images/Slider-four.png">
         </div>
       </div>
-      <h2>خدلك لفه</h2>
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="card-carousel">
-              <div class="my-card">
-                <img src="assets/images/slide-one.png">
-              </div>
-              <div class="my-card">
-                <img src="assets/images/Slider-two.png">
-              </div>
-              <div class="my-card">
-                <img src="assets/images/slider-three.png">
-              </div>
-              <div class="my-card">
-                <img src="assets/images/Slider-four.png">
-              </div>
-            </div>
-        </div>
-      </div>
-
     </section>
 
     <!-------------------start footer------------>
@@ -165,7 +118,7 @@
             <div class="col-sm-6 col-xs-12 img-footer">
               <img src="assets/images/footer-vec.jpg">
             </div>
-            <div class="col-sm-6 col-xs-12">
+            <div class="col-sm-6 col-xs-12 py-5 align-self-center">
               <div class="icons-footer">
                 <img src="assets/images/footer-logo3.png">
                 <h5>المنصوره-حي الجامعة-تقسيم الزعفران</h5>

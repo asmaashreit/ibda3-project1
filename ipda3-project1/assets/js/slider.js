@@ -40,3 +40,13 @@ $('html body').keydown(function(e) {
     $('.active').next().trigger('click');
   }
 });
+
+// Keyboard nav
+$('html body').keydown(function (e) {
+  if (e.keyCode == 37) { // left
+      $('.active').prev().trigger('click');
+  }
+  else if (e.keyCode == 39) { // right
+      $('.active').next().trigger('click');
+  }
+});
